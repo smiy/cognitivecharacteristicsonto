@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Sep 16 15:45:15 CEST 2010
+# Saved by TopBraid on Thu Sep 16 19:34:26 CEST 2010
 # baseURI: http://purl.org/ontology/cco/core#
 # imports: http://purl.org/ontology/ao/core
 # imports: http://purl.org/vocab/vann/
@@ -107,7 +107,7 @@ cco:attention_duration
       rdfs:isDefinedBy cco: ;
       rdfs:label "has attention duration"@en ;
       rdfs:range time:Interval ;
-      rdfs:subPropertyOf event:time ;
+      rdfs:subPropertyOf scovo:dimension , event:time ;
       status:term_status "testing"@en .
 
 cco:belief
@@ -161,7 +161,7 @@ cco:evidence
 
 cco:expertise
       rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:comment "The knowledge or expertise in a certain domain or topic, e.g. football, programming languages or music."@en ;
+      rdfs:comment "The knowledge or expertise in a certain domain or specific topic, e.g. football, programming languages or music."@en ;
       rdfs:isDefinedBy cco: ;
       rdfs:label "has expertise"@en ;
       rdfs:subPropertyOf cco:competence ;
@@ -200,15 +200,16 @@ cco:not_interested_in
       rdfs:domain foaf:Agent ;
       rdfs:isDefinedBy cco: ;
       rdfs:label "is not interested in"@en ;
+      rdfs:range owl:Thing ;
       status:term_status "unstable"@en .
 
 cco:overall_weight
-      rdf:type owl:FunctionalProperty , rdf:Property , owl:ObjectProperty ;
+      rdf:type owl:ObjectProperty , owl:FunctionalProperty , rdf:Property ;
       rdfs:comment "This weight reflects the overall interest in a topic and should be different from the actual weight of a cognitive characteristic."@en ;
       rdfs:domain cco:CognitiveCharacteristic ;
       rdfs:isDefinedBy cco: ;
       rdfs:label "has overall weight"@en ;
-      rdfs:subPropertyOf wo:weight ;
+      rdfs:subPropertyOf scovo:dimension , wo:weight ;
       status:term_status "testing"@en .
 
 cco:setting
@@ -221,7 +222,7 @@ cco:setting
 
 cco:skill
       rdf:type owl:ObjectProperty , rdf:Property ;
-      rdfs:comment "This is the super property to describe cognitive characteristics of the user of the cognitive pattern dimension, e.g. interests, skills, or expertise"@en ;
+      rdfs:comment "The ability or skill to (be able to) do something, e.g. to walk, to play the piano or to work in a team."@en ;
       rdfs:isDefinedBy cco: ;
       rdfs:label "has skill"@en ;
       rdfs:subPropertyOf cco:competence ;
@@ -242,6 +243,7 @@ cco:topic
       rdfs:domain cco:CognitiveCharacteristic ;
       rdfs:isDefinedBy cco: ;
       rdfs:label "has topic"@en ;
+      rdfs:range owl:Thing ;
       rdfs:subPropertyOf dcterms:subject ;
       status:term_status "unstable"@en .
 

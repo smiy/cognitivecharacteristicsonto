@@ -18,3 +18,7 @@ Version 0.1 (September 2010)
  * ADDED: cco:setting - a certain setting or preference. Often re. a specific environment, e.g. an application
  * ADDED: cco:activity - an activity, which is related to a topic of a cognitive charateristic description, e.g. if the topic is 
           football a related activity can be playing or watching
+ * MODIFIED: cco:attention_duration - now also as a sub property of scovo:dimension
+ * MODIFIED: cco:overall_weight - now also as a sub property of scovo:dimension
+ * MODIFIED: cco:not_interested_in - added owl:Thing as rdfs:range
+ * MODIFIED: cco:topic - added owl:Thing as rdfs:range
