@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cd="http://www.topbraidcomposer.org/2006/04/02/ClassDiagrams.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >47</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >195</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >336</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1098</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2006/time#Interval"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >123</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >316</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >516</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >699</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#ComplexInterest"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >85</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >270</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >230</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >722</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#InterestDynamics"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >66</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >235</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >241</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >339</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#Weight"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >180</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >270</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >357</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >84</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#WeightedInterest"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://purl.org/ontology/wi/core#ComplexInterest"/>
+    <rdfs:label>wi:ComplexInterest Diagram</rdfs:label>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:selectedResource rdf:resource="http://purl.org/ontology/wi/core#WeightedInterest"/>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >214</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >129</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >832</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >45</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >161</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >136</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >98</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2006/time#Interval"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >221</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >599</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >69</cd:x>
+        <cd:class rdf:resource="http://purl.org/NET/scovo#Item"/>
+      </cd:URINode>
+    </cd:nodes>
+    <rdfs:label>wi:WeightedInterest Diagram</rdfs:label>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >315</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >242</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >281</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >815</cd:x>
+        <cd:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >207</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >256</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >335</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >50</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#WeightedInterest"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >99</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >324</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >109</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >338</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >228</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >277</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >523</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#InterestDynamics"/>
+      </cd:URINode>
+    </cd:nodes>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >123</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >257</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >203</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1005</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >30</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >126</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >192</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >828</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >104</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >394</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >293</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >244</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >85</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >191</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >298</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >667</cd:x>
+        <cd:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >104</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >272</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >465</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >754</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#Context"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://purl.org/ontology/wi/core#Context"/>
+    <rdfs:label>wi:Context Diagram</rdfs:label>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >196</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >206</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >293</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wo/core#Weight"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >228</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >432</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >276</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#InterestDynamics"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >63</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >221</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >207</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >669</cd:x>
+        <cd:class rdf:resource="http://purl.org/NET/scovo#Item"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >207</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >256</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >362</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >649</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#WeightedInterest"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://purl.org/ontology/wi/core#InterestDynamics"/>
+    <rdfs:label>wi:InterestDynamics Diagram</rdfs:label>
+  </cd:Diagram>
+  <cd:Diagram>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >66</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >175</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >15</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >548</cd:x>
+        <cd:class rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >66</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >235</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >231</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >245</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#Weight"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >30</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >126</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >16</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >299</cd:x>
+        <cd:class rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >66</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >265</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >131</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >645</cd:x>
+        <cd:class rdf:resource="http://purl.org/NET/scovo#Item"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:nodes>
+      <cd:URINode>
+        <cd:height rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >85</cd:height>
+        <cd:width rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >228</cd:width>
+        <cd:y rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >114</cd:y>
+        <cd:x rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >389</cd:x>
+        <cd:class rdf:resource="http://purl.org/ontology/wi/core#Scale"/>
+      </cd:URINode>
+    </cd:nodes>
+    <cd:selectedResource rdf:resource="http://purl.org/ontology/wi/core#Scale"/>
+    <rdfs:label>wi:Scale Diagram</rdfs:label>
+  </cd:Diagram>
+</rdf:RDF>

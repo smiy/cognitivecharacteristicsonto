@@ -1,0 +1,69 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wi:      <http://purl.org/ontology/wi/core#> .
+@prefix wo:      <http://purl.org/ontology/wo/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix days: <http://ontologi.es/days#> .
+@prefix tl: <http://perl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<http://example.org/> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+<http://smiy.sourceforge.net/wi/examples/N3/wi_-_preference_example_-_w_interest_dynamics.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-08-14T11:29:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a preference interests example with interest dynamics based on the Weighted Interests Vocabulary."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/wi/core#> ;
+      dc:title "Preference Interests Example with Interest Dynamics"@en .
+
+<http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me>
+	a foaf:Person ;
+	foaf:name "Libby Miller" ;
+	wi:preference [
+		a wi:WeightedInterest ;
+		wi:topic <http://www.bbc.co.uk/5live#service> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 3.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		wi:interest_dynamics ex:Working
+		] ;
+	wi:preference [
+		a wi:WeightedInterest ;
+		wi:topic <http://www.bbc.co.uk/radio4#service> ;
+		wi:overall_weight [ 
+			a wo:Weight ;
+			wo:weight_value 7.0 ;
+			wo:scale ex:AScale 
+			] ;
+		wo:weight [ 
+			a wo:Weight ;
+			wo:weight_scale 5.0 ;
+			wo:scale ex:AScale 
+			] ;
+		wi:interest_dynamics ex:Working
+      	] .
+
+ex:AScale a wo:Scale ;
+	wo:min_weight 0.0 ;
+	wo:max_weight 9.0 ;
+	wo:step_size 1.0 .      
+      
+ex:Working a wi:InterestDynamics ;
+	wi:appear_time [
+		a days:WeekdayInterval ;
+		tl:at "08:00:00"^^xsd:time ;
+		tl:end "19:00:00"^^xsd:time 
+		] ;
+	wi:weight_value 9.0 ;
+	wi:scale ex:AScale ;
+	event:place ex:MyWorkingPlace .
+	
+ex:MyWorkingPlace a geo:Point .

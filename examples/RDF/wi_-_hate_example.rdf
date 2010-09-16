@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:wi="http://purl.org/ontology/wi/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/wi/examples/RDF/wi_-_hate_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-14T11:29:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes a not-interest-in example with context based on the Weighted Interests Vocabulary.</dc:description>
+    <dc:title xml:lang="en">Not-Interested-In Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/wi/core#"/>
+  </bibo:Document>
+  <foaf:Person rdf:about="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me">
+    <wi:not_interested_in rdf:resource="http://en.wikipedia.org/wiki/The_X_Factor_(UK)"/>
+    <foaf:name>Libby Miller</foaf:name>
+  </foaf:Person>
+</rdf:RDF>
