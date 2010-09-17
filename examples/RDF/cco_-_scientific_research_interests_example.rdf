@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:cco="http://purl.org/ontology/cco/core#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:ex="http://example.org/"
@@ -9,7 +10,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:time="http://www.w3.org/2006/time#"
    xmlns:tl="http://purl.org/NET/c4dm/timeline.owl#"
-   xmlns:wi="http://purl.org/ontology/wi/core#"
    xmlns:wo="http://purl.org/ontology/wo/core#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xml:base="http://example.org/">
@@ -18,41 +18,41 @@
     <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
     <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</wo:step_size>
   </wo:Scale>
-  <wi:InterestDynamics rdf:about="http://example.org/ASpecificContext">
+  <cco:CharacteristicDynamics rdf:about="http://example.org/ASpecificContext">
     <dcterms:subject rdf:resource="http://dblp.uni-trier.de/rec/bibtex/conf/cikm/AlonsoGB09"/>
-    <wi:appear_time>
+    <cco:appear_time>
       <time:UTInstant>
         <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-15T05:30:00+08:00</time:inXSDDateTime>
       </time:UTInstant>
-    </wi:appear_time>
-  </wi:InterestDynamics>
+    </cco:appear_time>
+  </cco:CharacteristicDynamics>
   <wo:Scale rdf:about="http://example.org/AnotherScale">
     <wo:max_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</wo:max_weight>
     <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
     <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.01</wo:step_size>
   </wo:Scale>
-  <wi:WeightedInterest rdf:about="http://example.org/WebInterest">
-    <wi:interest_dynamics rdf:resource="http://example.org/ASpecificContext"/>
-    <wi:longest_duration>
+  <cco:CognitiveCharacteristic rdf:about="http://example.org/WebInterest">
+    <cco:characteristic_dynamics rdf:resource="http://example.org/ASpecificContext"/>
+    <cco:longest_duration>
       <tl:UTInterval>
         <tl:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P9Y</tl:duration>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-17T05:30:00+08:00</dcterms:modified>
       </tl:UTInterval>
-    </wi:longest_duration>
-    <wi:overall_weight>
+    </cco:longest_duration>
+    <cco:overall_weight>
       <wo:Weight>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-12-22T23:30:00+08:00</dcterms:modified>
         <wo:scale rdf:resource="http://example.org/AScale"/>
         <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65.0</wo:weight_value>
       </wo:Weight>
-    </wi:overall_weight>
-    <wi:topic rdf:resource="http://www.wici-lab.org/wici/wiki/index.php/Web"/>
-    <wi:ultimative_duration>
+    </cco:overall_weight>
+    <cco:topic rdf:resource="http://dbpedia.org/resource/World_Wide_Web"/>
+    <cco:ultimative_duration>
       <tl:UTInterval>
         <tl:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P10Y</tl:duration>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-10T03:15:00+08:00</dcterms:modified>
       </tl:UTInterval>
-    </wi:ultimative_duration>
+    </cco:ultimative_duration>
     <wo:weight>
       <wo:Weight>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-01-17T13:30:00+08:00</dcterms:modified>
@@ -60,17 +60,17 @@
         <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.81</wo:weight_value>
       </wo:Weight>
     </wo:weight>
-  </wi:WeightedInterest>
-  <bibo:Document rdf:about="http://smiy.sourceforge.net/wi/examples/RDF/wi_-_scientific_research_interests_example.rdf">
-    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-09T18:42:52+01:00</dc:date>
-    <dc:description xml:lang="en">This document includes a scientific research interests example based on the Weighted Interests Vocabulary.</dc:description>
-    <dc:title xml:lang="en">Scientific Research Interests Example</dc:title>
-    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/wi/core#"/>
-  </bibo:Document>
-  <foaf:Person rdf:about="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baeza=Yates:Ricardo_A=.html">
-    <wi:preference rdf:resource="http://example.org/WebInterest"/>
+  </cco:CognitiveCharacteristic>
+  <foaf:Person rdf:about="http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Ftw.rpi.edu%2Fwiki%2FSpecial%3AURIResolver%2FRicardo_A._Baeza-2DYates">
+    <cco:habit rdf:resource="http://example.org/WebInterest"/>
     <foaf:name>Ricardo Baeza-Yates</foaf:name>
-    <foaf:topic_interest rdf:resource="http://www.wici-lab.org/wici/wiki/index.php/Web"/>
+    <foaf:topic_interest rdf:resource="http://dbpedia.org/resource/World_Wide_Web"/>
   </foaf:Person>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_scientific_research_interests_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-17T16:12:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes a scientific research interests example based on the Cognitive Characteristics Ontology.</dc:description>
+    <dc:title xml:lang="en">Scientific Research Interests Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
+  </bibo:Document>
 </rdf:RDF>

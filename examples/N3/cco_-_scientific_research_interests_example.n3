@@ -7,48 +7,48 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix tl:		<http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix dcterms:	<http://purl.org/dc/terms/> .
-@prefix wi:      <http://purl.org/ontology/wi/core#> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
 @prefix wo:      <http://purl.org/ontology/wo/core#> .
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
 @prefix ex:		<http://example.org/> .
 @prefix time:	<http://www.w3.org/2006/time#> .
 
-<http://smiy.sourceforge.net/wi/examples/N3/wi_-_scientific_research_interests_example.n3>
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_scientific_research_interests_example.n3>
       rdf:type bibo:Document ;
       dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-08-09T18:42:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes a scientific research interests example based on the Weighted Interests Vocabulary."""@en ;
-      rdfs:seeAlso <http://purl.org/ontology/wi/core#> ;
+      dc:date "2010-09-17T16:12:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a scientific research interests example based on the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
       dc:title "Scientific Research Interests Example"@en .
 
-ex:ASpecificContext a wi:InterestDynamics ;
+ex:ASpecificContext a cco:CharacteristicDynamics ;
 	dcterms:subject <http://dblp.uni-trier.de/rec/bibtex/conf/cikm/AlonsoGB09> ;
-    wi:appear_time [ 
+    cco:appear_time [ 
     	a time:UTInstant ;
     	time:inXSDDateTime "2009-11-15T05:30:00+08:00"^^xsd:dateTime 
     	] .
 
-<http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/b/Baeza=Yates:Ricardo_A=.html>
+<http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Ftw.rpi.edu%2Fwiki%2FSpecial%3AURIResolver%2FRicardo_A._Baeza-2DYates>
     a foaf:Person ;
-    foaf:topic_interest <http://www.wici-lab.org/wici/wiki/index.php/Web> ;
-    wi:preference ex:WebInterest ;
+    foaf:topic_interest <http://dbpedia.org/resource/World_Wide_Web> ;
+    cco:habit ex:WebInterest ;
     foaf:name "Ricardo Baeza-Yates" .
 
-ex:WebInterest a wi:WeightedInterest ;
-	wi:topic	<http://www.wici-lab.org/wici/wiki/index.php/Web> ;
-    wi:overall_weight [ 
+ex:WebInterest a cco:CognitiveCharacteristic ;
+	cco:topic	<http://dbpedia.org/resource/World_Wide_Web> ;
+    cco:overall_weight [ 
     	a wo:Weight ;
         wo:weight_value 65.0 ;
         wo:scale ex:AScale ;
         dcterms:modified "2009-12-22T23:30:00+08:00"^^xsd:dateTime
     ] ;
-    wi:interest_dynamics ex:ASpecificContext ;
-    wi:ultimative_duration [ 
+    cco:characteristic_dynamics ex:ASpecificContext ;
+    cco:ultimative_duration [ 
     	a tl:UTInterval ;
         tl:duration "P10Y"^^xsd:duration ;
         dcterms:modified "2010-01-10T03:15:00+08:00"^^xsd:dateTime
     ] ;
-    wi:longest_duration [ 
+    cco:longest_duration [ 
     	a tl:UTInterval ;
         tl:duration "P9Y"^^xsd:duration ;
         dcterms:modified "2010-01-17T05:30:00+08:00"^^xsd:dateTime

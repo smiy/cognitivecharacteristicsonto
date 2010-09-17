@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:cco="http://purl.org/ontology/cco/core#"
    xmlns:days="http://ontologi.es/days#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:event="http://purl.org/NET/c4dm/event.owl#"
@@ -10,7 +11,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:tl="http://perl.org/NET/c4dm/timeline.owl#"
-   xmlns:wi="http://purl.org/ontology/wi/core#"
    xmlns:wo="http://purl.org/ontology/wo/core#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xml:base="http://example.org/">
@@ -20,55 +20,59 @@
     <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</wo:step_size>
   </wo:Scale>
   <geo:Point rdf:about="http://example.org/MyWorkingPlace"/>
-  <wi:InterestDynamics rdf:about="http://example.org/Working">
+  <cco:CharacteristicDynamics rdf:about="http://example.org/Working">
     <event:place rdf:resource="http://example.org/MyWorkingPlace"/>
-    <wi:appear_time>
+    <cco:appear_time>
       <days:WeekdayInterval>
         <tl:at rdf:datatype="http://www.w3.org/2001/XMLSchema#time">08:00:00</tl:at>
         <tl:end rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</tl:end>
       </days:WeekdayInterval>
-    </wi:appear_time>
-    <wi:scale rdf:resource="http://example.org/AScale"/>
-    <wi:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wi:weight_value>
-  </wi:InterestDynamics>
-  <bibo:Document rdf:about="http://smiy.sourceforge.net/wi/examples/RDF/wi_-_preference_example_-_w_interest_dynamics.rdf">
+    </cco:appear_time>
+    <wo:scale rdf:resource="http://example.org/AScale"/>
+    <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:weight_value>
+  </cco:CharacteristicDynamics>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_preference_example.rdf">
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-14T11:29:52+01:00</dc:date>
-    <dc:description xml:lang="en">This document includes a preference interests example with interest dynamics based on the Weighted Interests Vocabulary.</dc:description>
-    <dc:title xml:lang="en">Preference Interests Example with Interest Dynamics</dc:title>
-    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/wi/core#"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-17T15:04:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes a preference interests example with characteristic dynamics based on the Cognitive Characteristics Ontology.</dc:description>
+    <dc:title xml:lang="en">Preference Interests Example with Characteristic Dynamics</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
   </bibo:Document>
   <foaf:Person rdf:about="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me">
-    <wi:preference>
-      <wi:WeightedInterest>
-        <wi:interest_dynamics rdf:resource="http://example.org/Working"/>
-        <wi:topic rdf:resource="http://www.bbc.co.uk/5live#service"/>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Listening"/>
+        <cco:characteristic_dynamics rdf:resource="http://example.org/Working"/>
+        <cco:topic rdf:resource="http://www.bbc.co.uk/5live#service"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
             <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</wo:weight_value>
           </wo:Weight>
         </wo:weight>
-      </wi:WeightedInterest>
-    </wi:preference>
-    <wi:preference>
-      <wi:WeightedInterest>
-        <wi:interest_dynamics rdf:resource="http://example.org/Working"/>
-        <wi:overall_weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Listening"/>
+        <cco:characteristic_dynamics rdf:resource="http://example.org/Working"/>
+        <cco:overall_weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
             <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
           </wo:Weight>
-        </wi:overall_weight>
-        <wi:topic rdf:resource="http://www.bbc.co.uk/radio4#service"/>
+        </cco:overall_weight>
+        <cco:topic rdf:resource="http://www.bbc.co.uk/radio4#service"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
             <wo:weight_scale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</wo:weight_scale>
           </wo:Weight>
         </wo:weight>
-      </wi:WeightedInterest>
-    </wi:preference>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:interest rdf:resource="http://www.bbc.co.uk/5live#service"/>
+    <cco:interest rdf:resource="http://www.bbc.co.uk/radio4#service"/>
     <foaf:name>Libby Miller</foaf:name>
   </foaf:Person>
 </rdf:RDF>

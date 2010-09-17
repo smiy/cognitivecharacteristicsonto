@@ -1,7 +1,7 @@
 # baseURI: http://example.org/
 
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix wi:      <http://purl.org/ontology/wi/core#> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
 @prefix wo:      <http://purl.org/ontology/wo/core#> .
 @prefix bibo:    <http://purl.org/ontology/bibo/> .
 @prefix days: <http://ontologi.es/days#> .
@@ -14,26 +14,28 @@
 @prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
 @prefix dcterms:	<http://purl.org/dc/terms/> .
 
-<http://smiy.sourceforge.net/wi/examples/N3/wi_-_music_preference_example.n3>
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_music_preference_example.n3>
       rdf:type bibo:Document ;
       dc:creator <http://foaf.me/zazi#me> ;
-      dc:date "2010-08-14T17:25:52+01:00"^^xsd:dateTime ;
-      dc:description """This document includes a music preference example with context based on the Weighted Interests Vocabulary."""@en ;
-      rdfs:seeAlso <http://purl.org/ontology/wi/core#> ;
+      dc:date "2010-09-17T15:54:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a music preference example with context based on the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
       dc:title "Music Preference Example"@en .
 
 <http://foaf.me/zazi#me>
 	a foaf:Person ;
 	foaf:name "Bob Ferris" ;
-	wi:preference [
-		a wi:WeightedInterest ;
-		wi:topic <http://dbtune.org/musicbrainz/resource/artist/20ff3303-4fe2-4a47-a1b6-291e26aa3438> ;
+	cco:interest <http://dbtune.org/musicbrainz/resource/artist/20ff3303-4fe2-4a47-a1b6-291e26aa3438> ;
+	cco:interest <http://dbtune.org/musicbrainz/resource/artist/470a4ced-1323-4c91-8fd5-0bb3fb4c932a> ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbtune.org/musicbrainz/resource/artist/20ff3303-4fe2-4a47-a1b6-291e26aa3438> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 3.0 ;
       		wo:scale ex:AScale 
       		] ;
-		wi:appear_time [
+		cco:appear_time [
 			a days:WeekdayInterval ;
 			dc:title "working time" ;
 			tl:at "08:00:00"^^xsd:time ;
@@ -41,35 +43,35 @@
 			dcterms:modified "2009-12-14T10:01:00+01:00"^^xsd:dateTime 
 			] ;
 		] ;
-	wi:preference [
-		a wi:WeightedInterest ;
-		wi:topic <http://dbtune.org/musicbrainz/resource/artist/470a4ced-1323-4c91-8fd5-0bb3fb4c932a> ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbtune.org/musicbrainz/resource/artist/470a4ced-1323-4c91-8fd5-0bb3fb4c932a> ;
 		wo:weight [ 
 			a wo:Weight ;
 			wo:weight_value 7.0 ;
 			wo:scale ex:AScale ;
 			dcterms:modified "2010-06-18T09:34:00+01:00"^^xsd:dateTime 
 			] ;
-		wi:overall_weight [
+		cco:overall_weight [
 			a wo:Weight ;
 			wo:weight_value 5.0 ;
 			wo:scale ex:AScale ;
 			dcterms:modified "2010-07-02T22:20:00+01:00"^^xsd:dateTime
 			] ;
-		wi:appear_time [
+		cco:appear_time [
 			a days:FridayInterval ;
 			dc:title "party time" ;
 			tl:at "23:00:00"^^xsd:time ;
 			dcterms:modified "2010-03-21T18:40:00+01:00"^^xsd:dateTime 
 			] ;
-		wi:interest_dynamics ex:TechnoParty ;
-		wi:interest_dynamics ex:BigFan ;
-		wi:ultimative_duration [ 
+		cco:characteristic_dynamics ex:TechnoParty ;
+		cco:characteristic_dynamics ex:BigFan ;
+		cco:ultimative_duration [ 
 			a tl:UTInterval ;
         	tl:duration "P13Y"^^xsd:duration ;
         	dcterms:modified "2010-08-14T17:25:00+01:00"^^xsd:dateTime
     		] ;
-    	wi:longest_duration [ 
+    	cco:longest_duration [ 
 			a tl:UTInterval ;
         	tl:duration "P5Y"^^xsd:duration ;
         	tl:at "2001-02-02T00:00:00+01:00"^^xsd:dateTime ;
@@ -77,16 +79,16 @@
         	dcterms:modified "2010-08-14T17:25:00+01:00"^^xsd:dateTime
     		] ;
       	] ;
-      	wi:not_interested_in <http://dbpedia.org/resource/Category:Schlager> ;
-      	wi:not_interested_in <http://dbpedia.org/resource/Category:German_folk_music> .
+      	cco:not_interested_in <http://dbpedia.org/resource/Category:Schlager> ;
+      	cco:not_interested_in <http://dbpedia.org/resource/Category:German_folk_music> .
 
 ex:AScale a wo:Scale ;
 	wo:min_weight 0.0 ;
 	wo:max_weight 9.0 ;
 	wo:step_size 1.0 .	
 		
-ex:TechnoParty a wi:InterestDynamics ;
-	wi:appear_time [
+ex:TechnoParty a cco:CharacteristicDynamics ;
+	cco:appear_time [
 		a tl:UTInterval ;
 		tl:at "2010-04-03T23:30:00+01:00"^^xsd:dateTime ;
 		tl:end "2010-04-04T05:30:00+01:00"^^xsd:dateTime
@@ -96,8 +98,8 @@ ex:TechnoParty a wi:InterestDynamics ;
 	event:place <http://dbpedia.org/resource/Tresor> ;
 	dcterms:subject <http://www.residentadvisor.net/event.aspx?151690> .
 	
-ex:BigFan a wi:InterestDynamics ;
-	wi:appear_time [
+ex:BigFan a cco:CharacteristicDynamics ;
+	cco:appear_time [
 		a tl:UTInterval ;
 		tl:at "2001-02-02T00:00:00+01:00"^^xsd:dateTime ;
         tl:end "2005-10-21T00:00:00+01:00"^^xsd:dateTime
