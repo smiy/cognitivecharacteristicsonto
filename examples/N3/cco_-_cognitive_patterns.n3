@@ -25,22 +25,26 @@
 <http://foaf.me/zazi#me>
 	a foaf:Person ;
 	foaf:name "Bob Ferris" ;
-	cco:interest <http://dbpedia.org/resource/Semantic_Web> ;
-	cco:skill <http://dbpedia.org/resource/Ontology_(computer_science)> ;
-	cco:expertise <http://dbpedia.org/resource/Ontology> ;
-	cco:belief <http://linkeddata.uriburner.com/describe/?url=http://www.semanlink.net/tag/named_graphs> ;
+	cco:interest <http://dbpedia.org/resource/Category:Semantic_Web> ;
+	cco:skill <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
+	cco:expertise <http://dbpedia.org/resource/Category:Ontology> ;
+	cco:belief <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Semantic_Web> ;
+		cco:topic <http://dbpedia.org/resource/Category:Semantic_Web> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 9.0 ;
       		wo:scale ex:AScale 
       		] ;
+      	cco:characteristic_dynamics [
+      		a cco:CharacteristicDynamics ;
+      		dcterms:subject <http://dbpedia.org/resource/Category:Knowledge_representation>
+      		] ;
 		] ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Ontology_(computer_science)> ;
+		cco:topic <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 7.0 ;
@@ -50,7 +54,7 @@
 		] ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Ontology> ;
+		cco:topic <http://dbpedia.org/resource/Category:Ontology> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 5.0 ;
@@ -59,7 +63,7 @@
 		] ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
-		cco:topic <http://linkeddata.uriburner.com/describe/?url=http://www.semanlink.net/tag/named_graphs> ;
+		cco:topic <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 7.0 ;
