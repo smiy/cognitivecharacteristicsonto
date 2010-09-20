@@ -12,7 +12,8 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:tl="http://perl.org/NET/c4dm/timeline.owl#"
    xmlns:wo="http://purl.org/ontology/wo/core#"
-   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
   <wo:Scale rdf:about="http://example.org/AScale">
     <wo:max_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:max_weight>
     <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
@@ -25,10 +26,10 @@
       <cco:CognitiveCharacteristic>
         <cco:characteristic_dynamics>
           <cco:CharacteristicDynamics>
-            <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Knowledge_representation"/>
+            <dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Semantic_Web"/>
           </cco:CharacteristicDynamics>
         </cco:characteristic_dynamics>
-        <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Semantic_Web"/>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Knowledge_representation"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -39,7 +40,7 @@
     </cco:habit>
     <cco:habit>
       <cco:CognitiveCharacteristic>
-        <cco:activity rdf:resource="http://dbpedia.org/resource/Modelling"/>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Knowledge_engineering"/>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Ontology_(information_science)"/>
         <wo:weight>
           <wo:Weight>
@@ -71,11 +72,11 @@
         </wo:weight>
       </cco:CognitiveCharacteristic>
     </cco:habit>
-    <cco:interest rdf:resource="http://dbpedia.org/resource/Category:Semantic_Web"/>
+    <cco:interest rdf:resource="http://dbpedia.org/resource/Category:Knowledge_representation"/>
     <cco:skill rdf:resource="http://dbpedia.org/resource/Category:Ontology_(information_science)"/>
     <foaf:name>Bob Ferris</foaf:name>
   </foaf:Person>
-  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/N3/cco_-_cognitive_patterns.n3">
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_cognitive_patterns.rdf">
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T10:52:52+01:00</dc:date>
     <dc:description xml:lang="en">This document includes a cognitive patterns example with context based on the Cognitive Characteristics Ontology.</dc:description>

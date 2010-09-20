@@ -25,13 +25,13 @@
 <http://foaf.me/zazi#me>
 	a foaf:Person ;
 	foaf:name "Bob Ferris" ;
-	cco:interest <http://dbpedia.org/resource/Category:Semantic_Web> ;
+	cco:interest <http://dbpedia.org/resource/Category:Knowledge_representation> ;
 	cco:skill <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
 	cco:expertise <http://dbpedia.org/resource/Category:Ontology> ;
 	cco:belief <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Category:Semantic_Web> ;
+		cco:topic <http://dbpedia.org/resource/Category:Knowledge_representation> ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 9.0 ;
@@ -39,7 +39,7 @@
       		] ;
       	cco:characteristic_dynamics [
       		a cco:CharacteristicDynamics ;
-      		dcterms:subject <http://dbpedia.org/resource/Category:Knowledge_representation>
+      		dcterms:subject <http://dbpedia.org/resource/Category:Semantic_Web>
       		] ;
 		] ;
 	cco:habit [
@@ -50,7 +50,7 @@
       		wo:weight_value 7.0 ;
       		wo:scale ex:AScale 
       		] ;
-		cco:activity <http://dbpedia.org/resource/Modelling>
+		cco:activity <http://dbpedia.org/resource/Knowledge_engineering>
 		] ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
