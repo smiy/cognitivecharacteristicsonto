@@ -86,6 +86,7 @@
     </cco:habit>
     <cco:habit>
       <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://sw.opencyc.org/concept/Mx4rvVjUJ5wpEbGdrcN5Y29ycA"/>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Piano"/>
         <wo:weight>
           <wo:Weight>
@@ -168,7 +169,7 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/ao/core#context"/>
   </rdf:Propery>
-  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_UMIRL_example.rdf">
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/N3/cco_-_UMIRL_example.n3">
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T08:36:52+01:00</dc:date>
     <dc:description xml:lang="en">This document includes an user profile example, which was originally modeled with the User Modeling for Information Retrieval Language, and is now &#xD;

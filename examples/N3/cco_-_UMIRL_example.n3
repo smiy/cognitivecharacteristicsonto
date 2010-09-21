@@ -57,6 +57,7 @@ ex:APerson
       		wo:weight_value 6.0 ;
       		wo:scale ex:AScale 
       		] ;
+      	cco:activity <http://sw.opencyc.org/concept/Mx4rvVjUJ5wpEbGdrcN5Y29ycA>
 		] ;
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
