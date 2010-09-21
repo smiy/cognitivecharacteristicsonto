@@ -1,0 +1,164 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
+@prefix wo:      <http://purl.org/ontology/wo/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix days: <http://ontologi.es/days#> .
+@prefix tl: <http://perl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<http://example.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+@prefix ov:	<http://open.vocab.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix cv:	<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#> .
+@prefix cvbase: <http://kaste.lv/~captsolo/semweb/resume/base.rdfs#> .
+@prefix countries: <http://www.daml.org/2001/09/countries/countries.daml#> .
+@prefix sim:	<http://purl.org/ontology/similarity/> .
+@prefix ao:	<http://purl.org/ontology/ao/core#> .
+
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_UMIRL_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-21T08:36:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes an user profile example, which was originally modeled with the User Modeling for Information Retrieval Language, and is now 
+remodeled with help of the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
+      dc:title "UMIRL Example"@en .
+      
+ex:APerson
+	a foaf:Person , cv:Person ;
+	foaf:name "John White" ;
+	foaf:birthday "1974-07-09"^^xsd:date ;
+	foaf:gender "male" ;
+	cv:hasCitizenship countries:US ;
+	cco:skill <http://dbpedia.org/resource/Piano> ;
+	cco:skill <http://dbpedia.org/resource/Vocal> ;
+	cco:expertise <http://dbpedia.org/resource/Music> ;
+	cco:interest <http://dbpedia.org/page/Category:Classical_music> ;
+	cco:interest <http://dbpedia.org/page/Category:Blues> ;
+	cco:interest <http://dbpedia.org/page/Category:Pop_music> ;
+	cco:interest <http://dbpedia.org/page/Category:Rock_music> ;
+	cco:interest <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart> ;
+	cco:interest <http://dbpedia.org/resource/The_Beatles> ;
+	cco:interest  <http://dbtune.org/musicbrainz/page/signal/8aefa373-2858-4643-b691-cad4ac7c971a> ;
+	cco:interest ex:IdiosyncraticGenre1 ;
+	cco:interest ex:IdiosyncraticGenre2 ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Piano> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 6.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Vocal> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		cco:activity <http://dbpedia.org/resource/Category:Singing>
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Music> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 0.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/page/Category:Classical_music> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/page/Category:Blues> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 9.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/page/Category:Pop_music> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 5.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/page/Category:Rock_music> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 8.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic ex:IdiosyncraticGenre2 ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+      	cco:appear_time [
+      		a days:WeekdayInterval ;
+      		dc:title "bedtime" ;
+      		tl:at "23:00:00"^^xsd:time 
+      		] ;
+		] .
+		
+ex:ACV 
+	a cv:CV ;
+	cv:aboutPerson ex:APerson ;
+	cv:hasEducation [
+		a cv:Education ;
+		cv:degreeType cvbase:EduMaster 
+		] ;
+	cv:hasWorkHistory ex:AWorkHistory .
+	
+ex:AWorkHistory
+	a cv:WorkHistory ;
+	cv:careerLevel cvbase:Student .
+	
+ex:tempo
+	a rdf:Propery , owl:DatatypeProperty ;
+	rdfs:range xsd:string ;
+	rdfs:subPropertyOf ao:context .
+		
+ex:IdiosyncraticGenre1
+	a sim:Association ;
+	dc:title "happy music" ;
+	ao:genre <http://dbpedia.org/page/Category:Pop_music> ;
+	ex:tempo "allegro" ;
+	ao:mood "happy" .
+	
+ex:IdiosyncraticGenre2
+	a sim:Association ;
+	dc:title "romantic music" ;
+	ex:tempo "largo" .
+	
+ex:AScale a wo:Scale ;
+	wo:min_weight 0.0 ;
+	wo:max_weight 9.0 ;
+	wo:step_size 1.0 .

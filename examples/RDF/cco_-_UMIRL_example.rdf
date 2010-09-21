@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ao="http://purl.org/ontology/ao/core#"
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:cco="http://purl.org/ontology/cco/core#"
+   xmlns:countries="http://www.daml.org/2001/09/countries/countries.daml#"
+   xmlns:cv="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#"
+   xmlns:cvbase="http://kaste.lv/~captsolo/semweb/resume/base.rdfs#"
+   xmlns:days="http://ontologi.es/days#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+   xmlns:ex="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:ov="http://open.vocab.org/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sim="http://purl.org/ontology/similarity/"
+   xmlns:tl="http://perl.org/NET/c4dm/timeline.owl#"
+   xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+   xmlns:wo="http://purl.org/ontology/wo/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
+  <cv:CV rdf:about="http://example.org/ACV">
+    <cv:aboutPerson rdf:resource="http://example.org/APerson"/>
+    <cv:hasEducation>
+      <cv:Education>
+        <cv:degreeType rdf:resource="http://kaste.lv/~captsolo/semweb/resume/base.rdfs#EduMaster"/>
+      </cv:Education>
+    </cv:hasEducation>
+    <cv:hasWorkHistory rdf:resource="http://example.org/AWorkHistory"/>
+  </cv:CV>
+  <foaf:Person rdf:about="http://example.org/APerson">
+    <cv:hasCitizenship rdf:resource="http://www.daml.org/2001/09/countries/countries.daml#US"/>
+    <cco:expertise rdf:resource="http://dbpedia.org/resource/Music"/>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/page/Category:Blues"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/page/Category:Pop_music"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/page/Category:Rock_music"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:appear_time>
+          <days:WeekdayInterval>
+            <tl:at rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:00:00</tl:at>
+            <dc:title>bedtime</dc:title>
+          </days:WeekdayInterval>
+        </cco:appear_time>
+        <cco:topic rdf:resource="http://example.org/IdiosyncraticGenre2"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Piano"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Category:Singing"/>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Vocal"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Music"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:topic rdf:resource="http://dbpedia.org/page/Category:Classical_music"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:interest rdf:resource="http://dbpedia.org/page/Category:Blues"/>
+    <cco:interest rdf:resource="http://dbpedia.org/page/Category:Classical_music"/>
+    <cco:interest rdf:resource="http://dbpedia.org/page/Category:Pop_music"/>
+    <cco:interest rdf:resource="http://dbpedia.org/page/Category:Rock_music"/>
+    <cco:interest rdf:resource="http://dbpedia.org/resource/The_Beatles"/>
+    <cco:interest rdf:resource="http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart"/>
+    <cco:interest rdf:resource="http://dbtune.org/musicbrainz/page/signal/8aefa373-2858-4643-b691-cad4ac7c971a"/>
+    <cco:interest rdf:resource="http://example.org/IdiosyncraticGenre1"/>
+    <cco:interest rdf:resource="http://example.org/IdiosyncraticGenre2"/>
+    <cco:skill rdf:resource="http://dbpedia.org/resource/Piano"/>
+    <cco:skill rdf:resource="http://dbpedia.org/resource/Vocal"/>
+    <rdf:type rdf:resource="http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#Person"/>
+    <foaf:birthday rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-07-09</foaf:birthday>
+    <foaf:gender>male</foaf:gender>
+    <foaf:name>John White</foaf:name>
+  </foaf:Person>
+  <wo:Scale rdf:about="http://example.org/AScale">
+    <wo:max_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:max_weight>
+    <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
+    <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</wo:step_size>
+  </wo:Scale>
+  <cv:WorkHistory rdf:about="http://example.org/AWorkHistory">
+    <cv:careerLevel rdf:resource="http://kaste.lv/~captsolo/semweb/resume/base.rdfs#Student"/>
+  </cv:WorkHistory>
+  <sim:Association rdf:about="http://example.org/IdiosyncraticGenre1">
+    <ex:tempo>allegro</ex:tempo>
+    <dc:title>happy music</dc:title>
+    <ao:genre rdf:resource="http://dbpedia.org/page/Category:Pop_music"/>
+    <ao:mood>happy</ao:mood>
+  </sim:Association>
+  <sim:Association rdf:about="http://example.org/IdiosyncraticGenre2">
+    <ex:tempo>largo</ex:tempo>
+    <dc:title>romantic music</dc:title>
+  </sim:Association>
+  <rdf:Propery rdf:about="http://example.org/tempo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/ao/core#context"/>
+  </rdf:Propery>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_UMIRL_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T08:36:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes an user profile example, which was originally modeled with the User Modeling for Information Retrieval Language, and is now &#xD;
+remodeled with help of the Cognitive Characteristics Ontology.</dc:description>
+    <dc:title xml:lang="en">UMIRL Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
+  </bibo:Document>
+</rdf:RDF>
