@@ -11,7 +11,6 @@
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:ex="http://example.org/"
    xmlns:foaf="http://xmlns.com/foaf/0.1/"
-   xmlns:ov="http://open.vocab.org/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -162,11 +161,11 @@
     <ex:tempo>largo</ex:tempo>
     <dc:title>romantic music</dc:title>
   </sim:Association>
-  <rdf:Propery rdf:about="http://example.org/tempo">
+  <rdf:Property rdf:about="http://example.org/tempo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/ao/core#context"/>
-  </rdf:Propery>
+  </rdf:Property>
   <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_UMIRL_example.rdf">
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
     <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-21T08:36:52+01:00</dc:date>
