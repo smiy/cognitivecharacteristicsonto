@@ -34,6 +34,7 @@ ex:APerson
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
+		cco:characteristic cco:skill ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 6.0 ;
@@ -44,6 +45,7 @@ ex:APerson
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
+		cco:characteristic cco:expertise ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 7.0 ;
@@ -53,12 +55,13 @@ ex:APerson
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
+		cco:characteristic cco:interest ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 5.0 ;
       		wo:scale ex:AScale 
       		] ;
-      	cco:activity <http://sw.opencyc.org/concept/Mx4rwO0J55wpEbGdrcN5Y29ycA> .
+      	cco:activity <http://sw.opencyc.org/concept/Mx4rwO0J55wpEbGdrcN5Y29ycA>
 		] .
 	
 ex:AScale a wo:Scale ;

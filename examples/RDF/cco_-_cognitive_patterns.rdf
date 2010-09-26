@@ -30,6 +30,7 @@
           </cco:CharacteristicDynamics>
         </cco:characteristic_dynamics>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Knowledge_representation"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -42,6 +43,7 @@
       <cco:CognitiveCharacteristic>
         <cco:activity rdf:resource="http://dbpedia.org/resource/Knowledge_engineering"/>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Ontology_(information_science)"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#skill"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -53,6 +55,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Category:Ontology"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#expertise"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -64,6 +67,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#belief"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>

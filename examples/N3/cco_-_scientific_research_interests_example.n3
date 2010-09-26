@@ -36,6 +36,7 @@ ex:ASpecificContext a cco:CharacteristicDynamics ;
 
 ex:WebInterest a cco:CognitiveCharacteristic ;
 	cco:topic	<http://dbpedia.org/resource/World_Wide_Web> ;
+	cco:characteristic cco:interest ;
     cco:overall_weight [ 
     	a wo:Weight ;
         wo:weight_value 65.0 ;

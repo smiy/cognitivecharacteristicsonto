@@ -34,6 +34,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/page/Category:Blues"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -45,6 +46,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/page/Category:Pop_music"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -56,6 +58,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/page/Category:Rock_music"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -73,6 +76,7 @@
           </days:WeekdayInterval>
         </cco:appear_time>
         <cco:topic rdf:resource="http://example.org/IdiosyncraticGenre2"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -85,6 +89,7 @@
       <cco:CognitiveCharacteristic>
         <cco:activity rdf:resource="http://sw.opencyc.org/concept/Mx4rvVjUJ5wpEbGdrcN5Y29ycA"/>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Piano"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#skill"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -97,6 +102,7 @@
       <cco:CognitiveCharacteristic>
         <cco:activity rdf:resource="http://dbpedia.org/resource/Category:Singing"/>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Vocal"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#skill"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -108,6 +114,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/resource/Music"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#expertise"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -119,6 +126,7 @@
     <cco:habit>
       <cco:CognitiveCharacteristic>
         <cco:topic rdf:resource="http://dbpedia.org/page/Category:Classical_music"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>

@@ -32,6 +32,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Category:Knowledge_representation> ;
+		cco:characteristic cco:interest ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 9.0 ;
@@ -45,6 +46,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
+		cco:characteristic cco:skill ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 7.0 ;
@@ -55,6 +57,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia.org/resource/Category:Ontology> ;
+		cco:characteristic cco:expertise ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 5.0 ;
@@ -64,6 +67,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
+		cco:characteristic cco:belief ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 7.0 ;

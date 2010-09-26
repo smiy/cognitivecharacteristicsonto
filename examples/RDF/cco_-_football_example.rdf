@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ao="http://purl.org/ontology/ao/core#"
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:cco="http://purl.org/ontology/cco/core#"
+   xmlns:days="http://ontologi.es/days#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ex="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sim="http://purl.org/ontology/similarity/"
+   xmlns:tl="http://perl.org/NET/c4dm/timeline.owl#"
+   xmlns:wo="http://purl.org/ontology/wo/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
+  <foaf:Person rdf:about="http://example.org/APerson">
+    <cco:expertise rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://sw.opencyc.org/concept/Mx4rwJRiEpwpEbGdrcN5Y29ycA"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#skill"/>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#expertise"/>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://sw.opencyc.org/concept/Mx4rwO0J55wpEbGdrcN5Y29ycA"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
+        <cco:topic rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:interest rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+    <cco:skill rdf:resource="http://dbpedia.org/resource/Football_(soccer)"/>
+    <foaf:name>John Wayne</foaf:name>
+  </foaf:Person>
+  <wo:Scale rdf:about="http://example.org/AScale">
+    <wo:max_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:max_weight>
+    <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
+    <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</wo:step_size>
+  </wo:Scale>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_football_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-22T09:55:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes an example of a user profile, which consists of different cognitive characteristics of &#xD;
+the same topic, modeled with help of the Cognitive Characteristics Ontology.</dc:description>
+    <dc:title xml:lang="en">Football Example</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
+  </bibo:Document>
+</rdf:RDF>

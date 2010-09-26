@@ -47,6 +47,7 @@
       </wo:Weight>
     </cco:overall_weight>
     <cco:topic rdf:resource="http://dbpedia.org/resource/World_Wide_Web"/>
+    <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
     <cco:ultimative_duration>
       <tl:UTInterval>
         <tl:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P10Y</tl:duration>

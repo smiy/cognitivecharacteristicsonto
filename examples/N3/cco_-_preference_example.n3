@@ -30,6 +30,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://www.bbc.co.uk/5live#service> ;
+		cco:characteristic cco:interest ;
 		wo:weight [ 
 			a wo:Weight ;
       		wo:weight_value 3.0 ;
@@ -41,6 +42,7 @@
 	cco:habit [
 		a cco:CognitiveCharacteristic ;
 		cco:topic <http://www.bbc.co.uk/radio4#service> ;
+		cco:characteristic cco:interest ;
 		cco:overall_weight [ 
 			a wo:Weight ;
 			wo:weight_value 7.0 ;

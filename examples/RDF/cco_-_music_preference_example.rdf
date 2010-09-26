@@ -53,6 +53,7 @@
           </days:WeekdayInterval>
         </cco:appear_time>
         <cco:topic rdf:resource="http://dbtune.org/musicbrainz/resource/artist/20ff3303-4fe2-4a47-a1b6-291e26aa3438"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -88,6 +89,7 @@
           </wo:Weight>
         </cco:overall_weight>
         <cco:topic rdf:resource="http://dbtune.org/musicbrainz/resource/artist/470a4ced-1323-4c91-8fd5-0bb3fb4c932a"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <cco:ultimative_duration>
           <tl:UTInterval>
             <tl:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P13Y</tl:duration>

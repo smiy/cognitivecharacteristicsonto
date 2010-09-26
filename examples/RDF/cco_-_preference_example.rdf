@@ -44,6 +44,7 @@
         <cco:activity rdf:resource="http://dbpedia.org/resource/Listening"/>
         <cco:characteristic_dynamics rdf:resource="http://example.org/Working"/>
         <cco:topic rdf:resource="http://www.bbc.co.uk/5live#service"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>
@@ -63,6 +64,7 @@
           </wo:Weight>
         </cco:overall_weight>
         <cco:topic rdf:resource="http://www.bbc.co.uk/radio4#service"/>
+        <cco:characteristic rdf:resource="http://purl.org/ontology/cco/core#interest"/>
         <wo:weight>
           <wo:Weight>
             <wo:scale rdf:resource="http://example.org/AScale"/>

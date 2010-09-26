@@ -34,6 +34,7 @@ ex:APerson
     cco:habit [
         cco:activity <http://sw.opencyc.org/concept/Mx4rvVjUJ5wpEbGdrcN5Y29ycA> ;
         cco:topic <http://dbpedia.org/resource/Piano> ;
+        cco:characteristic cco:skill ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 6.0 ;
@@ -43,6 +44,7 @@ ex:APerson
     ], [
         cco:activity <http://dbpedia.org/resource/Category:Singing> ;
         cco:topic <http://dbpedia.org/resource/Vocal> ;
+        cco:characteristic cco:skill ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 7.0 ;
@@ -51,6 +53,7 @@ ex:APerson
         a cco:CognitiveCharacteristic
     ], [
         cco:topic <http://dbpedia.org/resource/Music> ;
+        cco:characteristic cco:expertise ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 0.0 ;
@@ -59,6 +62,7 @@ ex:APerson
         a cco:CognitiveCharacteristic
     ], [
         cco:topic <http://dbpedia.org/page/Category:Classical_music> ;
+        cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 7.0 ;
@@ -67,6 +71,7 @@ ex:APerson
         a cco:CognitiveCharacteristic
     ], [
         cco:topic <http://dbpedia.org/page/Category:Blues> ;
+        cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 9.0 ;
@@ -75,6 +80,7 @@ ex:APerson
         a cco:CognitiveCharacteristic
     ], [
         cco:topic <http://dbpedia.org/page/Category:Pop_music> ;
+        cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 5.0 ;
@@ -83,6 +89,7 @@ ex:APerson
         a cco:CognitiveCharacteristic
     ], [
         cco:topic <http://dbpedia.org/page/Category:Rock_music> ;
+        cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 8.0 ;
@@ -96,6 +103,7 @@ ex:APerson
             a days:WeekdayInterval
         ] ;
         cco:topic ex:IdiosyncraticGenre2 ;
+        cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
             wo:weight_value 7.0 ;
