@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:bibo="http://purl.org/ontology/bibo/"
+   xmlns:cco="http://purl.org/ontology/cco/core#"
+   xmlns:days="http://ontologi.es/days#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+   xmlns:ex="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:tl="http://perl.org/NET/c4dm/timeline.owl#"
+   xmlns:wo="http://purl.org/ontology/wo/core#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://example.org/">
+  <wo:Scale rdf:about="http://example.org/AScale">
+    <wo:max_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:max_weight>
+    <wo:min_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</wo:min_weight>
+    <wo:step_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</wo:step_size>
+  </wo:Scale>
+  <geo:Point rdf:about="http://example.org/MyWorkingPlace"/>
+  <cco:CharacteristicDynamics rdf:about="http://example.org/Working">
+    <event:place rdf:resource="http://example.org/MyWorkingPlace"/>
+    <cco:appear_time>
+      <days:WeekdayInterval>
+        <tl:at rdf:datatype="http://www.w3.org/2001/XMLSchema#time">08:00:00</tl:at>
+        <tl:end rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:00:00</tl:end>
+      </days:WeekdayInterval>
+    </cco:appear_time>
+    <wo:scale rdf:resource="http://example.org/AScale"/>
+    <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</wo:weight_value>
+  </cco:CharacteristicDynamics>
+  <bibo:Document rdf:about="http://smiy.sourceforge.net/cco/examples/RDF/cco_-_preference_example.rdf">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-17T15:04:52+01:00</dc:date>
+    <dc:description xml:lang="en">This document includes a preference interests example with characteristic dynamics based on the Cognitive Characteristics Ontology.</dc:description>
+    <dc:title xml:lang="en">Preference Interests Example with Characteristic Dynamics</dc:title>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
+  </bibo:Document>
+  <foaf:Person rdf:about="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me">
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Listening"/>
+        <cco:characteristic_dynamics rdf:resource="http://example.org/Working"/>
+        <cco:topic rdf:resource="http://www.bbc.co.uk/5live#service"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</wo:weight_value>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:habit>
+      <cco:CognitiveCharacteristic>
+        <cco:activity rdf:resource="http://dbpedia.org/resource/Listening"/>
+        <cco:characteristic_dynamics rdf:resource="http://example.org/Working"/>
+        <cco:overall_weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</wo:weight_value>
+          </wo:Weight>
+        </cco:overall_weight>
+        <cco:topic rdf:resource="http://www.bbc.co.uk/radio4#service"/>
+        <wo:weight>
+          <wo:Weight>
+            <wo:scale rdf:resource="http://example.org/AScale"/>
+            <wo:weight_scale rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</wo:weight_scale>
+          </wo:Weight>
+        </wo:weight>
+      </cco:CognitiveCharacteristic>
+    </cco:habit>
+    <cco:interest rdf:resource="http://www.bbc.co.uk/5live#service"/>
+    <cco:interest rdf:resource="http://www.bbc.co.uk/radio4#service"/>
+    <foaf:name>Libby Miller</foaf:name>
+  </foaf:Person>
+</rdf:RDF>

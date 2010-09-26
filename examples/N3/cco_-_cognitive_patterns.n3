@@ -1,0 +1,78 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
+@prefix wo:      <http://purl.org/ontology/wo/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix days: <http://ontologi.es/days#> .
+@prefix tl: <http://perl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<http://example.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_cognitive_patterns.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-20T10:52:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a cognitive patterns example with context based on the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
+      dc:title "Cognitive Patterns Example"@en .
+      
+<http://foaf.me/zazi#me>
+	a foaf:Person ;
+	foaf:name "Bob Ferris" ;
+	cco:interest <http://dbpedia.org/resource/Category:Knowledge_representation> ;
+	cco:skill <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
+	cco:expertise <http://dbpedia.org/resource/Category:Ontology> ;
+	cco:belief <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Category:Knowledge_representation> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 9.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+      	cco:characteristic_dynamics [
+      		a cco:CharacteristicDynamics ;
+      		dcterms:subject <http://dbpedia.org/resource/Category:Semantic_Web>
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Category:Ontology_(information_science)> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		cco:activity <http://dbpedia.org/resource/Knowledge_engineering>
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Category:Ontology> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 5.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia-live.openlinksw.com/describe/?url=http://dbpedia.org/resource/Named_graph> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] .
+		
+		
+ex:AScale a wo:Scale ;
+	wo:min_weight 0.0 ;
+	wo:max_weight 9.0 ;
+	wo:step_size 1.0 .

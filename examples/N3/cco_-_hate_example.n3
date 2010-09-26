@@ -1,0 +1,22 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_hate_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-17T14:53:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a not-interest-in example with context based on the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
+      dc:title "Not-Interested-In Example"@en .
+      
+<http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me>
+	a foaf:Person;
+	foaf:name "Libby Miller";
+	cco:not_interested_in <http://dbpedia.org/resource/The_X_Factor_%28UK%29> .

@@ -1,0 +1,73 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
+@prefix wo:      <http://purl.org/ontology/wo/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix days: <http://ontologi.es/days#> .
+@prefix tl: <http://perl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<http://example.org/> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_preference_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-17T15:04:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes a preference interests example with characteristic dynamics based on the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
+      dc:title "Preference Interests Example with Characteristic Dynamics"@en .
+
+<http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me>
+	a foaf:Person ;
+	foaf:name "Libby Miller" ;
+	cco:interest <http://www.bbc.co.uk/5live#service> ;
+	cco:interest <http://www.bbc.co.uk/radio4#service> ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://www.bbc.co.uk/5live#service> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 3.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		cco:characteristic_dynamics ex:Working ;
+		cco:activity <http://dbpedia.org/resource/Listening>
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://www.bbc.co.uk/radio4#service> ;
+		cco:overall_weight [ 
+			a wo:Weight ;
+			wo:weight_value 7.0 ;
+			wo:scale ex:AScale 
+			] ;
+		wo:weight [ 
+			a wo:Weight ;
+			wo:weight_scale 5.0 ;
+			wo:scale ex:AScale 
+			] ;
+		cco:characteristic_dynamics ex:Working ;
+		cco:activity <http://dbpedia.org/resource/Listening>
+      	] .
+
+ex:AScale a wo:Scale ;
+	wo:min_weight 0.0 ;
+	wo:max_weight 9.0 ;
+	wo:step_size 1.0 .      
+      
+ex:Working a cco:CharacteristicDynamics ;
+	cco:appear_time [
+		a days:WeekdayInterval ;
+		tl:at "08:00:00"^^xsd:time ;
+		tl:end "19:00:00"^^xsd:time 
+		] ;
+	wo:weight_value 9.0 ;
+	wo:scale ex:AScale ;
+	event:place ex:MyWorkingPlace .
+	
+ex:MyWorkingPlace a geo:Point .

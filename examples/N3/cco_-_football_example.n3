@@ -1,0 +1,67 @@
+# baseURI: http://example.org/
+
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cco:      <http://purl.org/ontology/cco/core#> .
+@prefix wo:      <http://purl.org/ontology/wo/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix days: <http://ontologi.es/days#> .
+@prefix tl: <http://perl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:		<http://example.org/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+@prefix sim:	<http://purl.org/ontology/similarity/> .
+@prefix ao:	<http://purl.org/ontology/ao/core#> .
+
+<http://smiy.sourceforge.net/cco/examples/N3/cco_-_football_example.n3>
+      rdf:type bibo:Document ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-22T09:55:52+01:00"^^xsd:dateTime ;
+      dc:description """This document includes an example of a user profile, which consists of different cognitive characteristicts of 
+the same topic modeled with help of the Cognitive Characteristics Ontology."""@en ;
+      rdfs:seeAlso <http://purl.org/ontology/cco/core#> ;
+      dc:title "Football Example"@en .
+      
+ex:APerson
+	a foaf:Person , cv:Person ;
+	foaf:name "John Wayne" ;
+	cco:skill <http://dbpedia.org/resource/Football_(soccer)> ;
+	cco:expertise <http://dbpedia.org/resource/Football_(soccer)> ;
+	cco:interest <http://dbpedia.org/resource/Football_(soccer)> ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Piano> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 6.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+      	cco:activity <http://sw.opencyc.org/concept/Mx4rvVjUJ5wpEbGdrcN5Y29ycA>
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Vocal> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 7.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		cco:activity <http://dbpedia.org/resource/Category:Singing>
+		] ;
+	cco:habit [
+		a cco:CognitiveCharacteristic ;
+		cco:topic <http://dbpedia.org/resource/Music> ;
+		wo:weight [ 
+			a wo:Weight ;
+      		wo:weight_value 0.0 ;
+      		wo:scale ex:AScale 
+      		] ;
+		] .
+	
+ex:AScale a wo:Scale ;
+	wo:min_weight 0.0 ;
+	wo:max_weight 9.0 ;
+	wo:step_size 1.0 .
