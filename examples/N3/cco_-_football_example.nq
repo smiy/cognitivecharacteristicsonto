@@ -27,39 +27,45 @@ the same topic, modeled with help of the Cognitive Characteristics Ontology."""@
       
 ex:APerson
 	a foaf:Person ;
-	foaf:name "John Wayne" ;
-	cco:skill <http://dbpedia.org/resource/Football_(soccer)> ;
-	cco:expertise <http://dbpedia.org/resource/Football_(soccer)> ;
-	cco:interest <http://dbpedia.org/resource/Football_(soccer)> ;
-	cco:habit [
-		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
-		wo:weight [ 
-			a wo:Weight ;
-      		wo:weight_value 6.0 ;
-      		wo:scale ex:AScale 
-      		] ;
-      	cco:activity <http://sw.opencyc.org/concept/Mx4rwJRiEpwpEbGdrcN5Y29ycA>
-		] ;
-	cco:habit [
-		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
-		wo:weight [ 
-			a wo:Weight ;
-      		wo:weight_value 7.0 ;
-      		wo:scale ex:AScale 
-      		] ;
-		] ;
-	cco:habit [
-		a cco:CognitiveCharacteristic ;
-		cco:topic <http://dbpedia.org/resource/Football_(soccer)> ;
-		wo:weight [ 
-			a wo:Weight ;
-      		wo:weight_value 5.0 ;
-      		wo:scale ex:AScale 
-      		] ;
-      	cco:activity <http://sw.opencyc.org/concept/Mx4rwO0J55wpEbGdrcN5Y29ycA> .
-		] .
+	foaf:name "John Wayne" .
+	
+ex:APerson 	
+	cco:skill <http://dbpedia.org/resource/Football_(soccer)> ex:CC1 .
+
+ex:CC1 
+	a cco:CognitiveCharacteristic ;
+	cco:topic <http://dbpedia.org/resource/Football_(soccer)> ; # now maybe obsolete
+	wo:weight [ 
+		a wo:Weight ;
+      	wo:weight_value 6.0 ;
+      	wo:scale ex:AScale 
+      	] ;
+     cco:activity <http://sw.opencyc.org/concept/Mx4rwJRiEpwpEbGdrcN5Y29ycA> .
+		
+ex:APerson		
+	cco:expertise <http://dbpedia.org/resource/Football_(soccer)> ex:CC2 .
+
+ex:CC2		
+	a cco:CognitiveCharacteristic ;
+	cco:topic <http://dbpedia.org/resource/Football_(soccer)> ; # now maybe obsolete
+	wo:weight [ 
+		a wo:Weight ;
+      	wo:weight_value 7.0 ;
+      	wo:scale ex:AScale 
+      	] .
+		
+ex:APerson		
+	cco:interest <http://dbpedia.org/resource/Football_(soccer)> ex:CC3 .
+	
+ex:CC3	
+	a cco:CognitiveCharacteristic ;
+	cco:topic <http://dbpedia.org/resource/Football_(soccer)> ; # now maybe obsolete
+	wo:weight [ 
+		a wo:Weight ;
+      	wo:weight_value 5.0 ;
+      	wo:scale ex:AScale 
+      	] ;
+     cco:activity <http://sw.opencyc.org/concept/Mx4rwO0J55wpEbGdrcN5Y29ycA> .
 	
 ex:AScale a wo:Scale ;
 	wo:min_weight 0.0 ;

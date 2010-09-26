@@ -1,6 +1,12 @@
 ============================
 Version 0.1 (September 2010)
 ============================
+ * ADDED: cco:characteristic - relates to the applied cognitive characteristic (property), e.g. competence, belief, expertise, skill, 
+          interest or setting
+
+============================
+Version 0.1 (September 2010)
+============================
  * IMPORTED: all concepts and properties of the former Weighted Interests Vocabulary and introduced a new namespace cco:
  * MODIFIED: renamed wi:interest_dynamics to cco:characteristic_dynamics
  * MODIFIED: renamed wi:InterestDynamics to cco:CharacteristicDynamics

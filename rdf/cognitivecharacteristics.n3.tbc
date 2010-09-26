@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Sep 16 19:34:26 CEST 2010
+# Saved by TopBraid on Sun Sep 26 13:16:50 CEST 2010
 # baseURI: null
 
 @prefix composite:  <http://www.topbraid.org/2007/05/composite.owl#> .
@@ -14,35 +14,35 @@
       rdfs:label "cco:CognitiveCharacteristic Graph" ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/NET/c4dm/event.owl#sub_event> ;
-                visual:height "18"^^xsd:int ;
-                visual:width "148"^^xsd:int ;
-                visual:x "1335"^^xsd:int ;
-                visual:y "120"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#characteristic_dynamics> ;
-                visual:height "18"^^xsd:int ;
-                visual:width "211"^^xsd:int ;
-                visual:x "1093"^^xsd:int ;
-                visual:y "68"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#topic> ;
+                visual:depicts <http://purl.org/ontology/cco/core#habit> ;
                 visual:height "18"^^xsd:int ;
                 visual:width "112"^^xsd:int ;
-                visual:x "805"^^xsd:int ;
+                visual:x "949"^^xsd:int ;
                 visual:y "68"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#CognitiveCharacteristic> ;
+                visual:depicts <http://xmlns.com/foaf/0.1/Agent> ;
                 visual:height "18"^^xsd:int ;
-                visual:width "208"^^xsd:int ;
-                visual:x "674"^^xsd:int ;
+                visual:width "119"^^xsd:int ;
+                visual:x "943"^^xsd:int ;
                 visual:y "120"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/cco/core#overall_weight> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "161"^^xsd:int ;
+                visual:x "591"^^xsd:int ;
+                visual:y "68"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/cco/core#agent> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "115"^^xsd:int ;
+                visual:x "721"^^xsd:int ;
+                visual:y "16"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -54,11 +54,19 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#agent> ;
+                visual:depicts <http://purl.org/ontology/cco/core#characteristic_dynamics> ;
                 visual:height "18"^^xsd:int ;
-                visual:width "115"^^xsd:int ;
-                visual:x "721"^^xsd:int ;
-                visual:y "16"^^xsd:int
+                visual:width "211"^^xsd:int ;
+                visual:x "1093"^^xsd:int ;
+                visual:y "68"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/NET/scovo#Item> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "121"^^xsd:int ;
+                visual:x "718"^^xsd:int ;
+                visual:y "172"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -78,27 +86,11 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://xmlns.com/foaf/0.1/Agent> ;
+                visual:depicts <http://purl.org/NET/c4dm/event.owl#sub_event> ;
                 visual:height "18"^^xsd:int ;
-                visual:width "119"^^xsd:int ;
-                visual:x "943"^^xsd:int ;
+                visual:width "148"^^xsd:int ;
+                visual:x "1335"^^xsd:int ;
                 visual:y "120"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#habit> ;
-                visual:height "18"^^xsd:int ;
-                visual:width "112"^^xsd:int ;
-                visual:x "949"^^xsd:int ;
-                visual:y "68"^^xsd:int
-              ] ;
-      visual:child
-              [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/ontology/cco/core#overall_weight> ;
-                visual:height "18"^^xsd:int ;
-                visual:width "161"^^xsd:int ;
-                visual:x "591"^^xsd:int ;
-                visual:y "68"^^xsd:int
               ] ;
       visual:child
               [ rdf:type visual:Box ;
@@ -110,10 +102,18 @@
               ] ;
       visual:child
               [ rdf:type visual:Box ;
-                visual:depicts <http://purl.org/NET/scovo#Item> ;
+                visual:depicts <http://purl.org/ontology/cco/core#topic> ;
                 visual:height "18"^^xsd:int ;
-                visual:width "121"^^xsd:int ;
-                visual:x "718"^^xsd:int ;
-                visual:y "172"^^xsd:int
+                visual:width "112"^^xsd:int ;
+                visual:x "805"^^xsd:int ;
+                visual:y "68"^^xsd:int
+              ] ;
+      visual:child
+              [ rdf:type visual:Box ;
+                visual:depicts <http://purl.org/ontology/cco/core#CognitiveCharacteristic> ;
+                visual:height "18"^^xsd:int ;
+                visual:width "208"^^xsd:int ;
+                visual:x "674"^^xsd:int ;
+                visual:y "120"^^xsd:int
               ] ;
       visual:depicts <http://purl.org/ontology/cco/core#CognitiveCharacteristic> .

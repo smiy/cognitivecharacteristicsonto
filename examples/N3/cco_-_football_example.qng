@@ -1,0 +1,22 @@
+Named Graph	Subject		Predicate           Object                                      Statement ID
+
+ex:NG1		ex:APerson	cco:skill           ex:soccer                                   ex:SID1
+ex:NG1		ex:SID1		rdf:type            cco:CognitiveCharacteristic                 ex:SID2
+ex:NG1		ex:SID1		rdf:type            ex:Statement                                ex:SID3
+ex:NG1		ex:SID1		wo:weight           0.6                                         ex:SID4
+ex:NG1		ex:SID1		cco:activity        ex:playing                                  ex:SID5
+ex:NG1		ex:SID4		rdf:type            wo:Weight                                   ex:SID6
+ex:NG1		ex:SID4		rdf:type            ex:Statement                                ex:SID7
+ex:NG1		ex:SID4		wo:scale            ex:AScale                                   ex:SID8
+ex:DG		ex:AScale	wo:min_weight       0.0                                         ex:SID9
+ex:DG		ex:AScale	wo:max_weight       0.9                                         ex:SID10
+ex:DG		ex:AScale	wo:step_size        0.1                                         ex:SID11
+ex:DG		ex:AScale	dcterms:modified    ”2010-09-22T09:55:52+01:00”^^xsd:dateTime   ex:SID12
+ex:DG		ex:AScale	dc:creator          http://foaf.me/zazi#me                      ex:SID13
+ex:DG		ex:NG1		dcterms:modified    ”2010-09-22T09:55:52+01:00”^^xsd:dateTime   ex:SID14
+ex:DG		ex:NG1		dc:creator          http://foaf.me/zazi#me                      ex:SID15
+ex:DG		ex:DG		dcterms:modified    ”2010-09-22T09:55:52+01:00”^^xsd:dateTime   ex:SID16
+ex:DG		ex:DG		dc:creator          http://foaf.me/zazi#me                      ex:SID17
+
+
+ex:DG = default graph
