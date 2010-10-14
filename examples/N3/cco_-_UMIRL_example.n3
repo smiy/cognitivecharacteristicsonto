@@ -61,7 +61,7 @@ ex:APerson
         ] ;
         a cco:CognitiveCharacteristic
     ], [
-        cco:topic <http://dbpedia.org/page/Category:Classical_music> ;
+        cco:topic <http://dbpedia.org/resource/Category:Classical_music> ;
         cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
@@ -70,7 +70,7 @@ ex:APerson
         ] ;
         a cco:CognitiveCharacteristic
     ], [
-        cco:topic <http://dbpedia.org/page/Category:Blues> ;
+        cco:topic <http://dbpedia.org/resource/Category:Blues> ;
         cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
@@ -79,7 +79,7 @@ ex:APerson
         ] ;
         a cco:CognitiveCharacteristic
     ], [
-        cco:topic <http://dbpedia.org/page/Category:Pop_music> ;
+        cco:topic <http://dbpedia.org/resource/Category:Pop_music> ;
         cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
@@ -88,7 +88,7 @@ ex:APerson
         ] ;
         a cco:CognitiveCharacteristic
     ], [
-        cco:topic <http://dbpedia.org/page/Category:Rock_music> ;
+        cco:topic <http://dbpedia.org/resource/Category:Rock_music> ;
         cco:characteristic cco:interest ;
         wo:weight [
             wo:scale ex:AScale ;
@@ -111,7 +111,7 @@ ex:APerson
         ] ;
         a cco:CognitiveCharacteristic
     ] ;
-    cco:interest <http://dbpedia.org/page/Category:Blues>, <http://dbpedia.org/page/Category:Classical_music>, <http://dbpedia.org/page/Category:Pop_music>, <http://dbpedia.org/page/Category:Rock_music>, <http://dbpedia.org/resource/The_Beatles>, <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>, <http://dbtune.org/musicbrainz/page/signal/8aefa373-2858-4643-b691-cad4ac7c971a>, ex:IdiosyncraticGenre1, ex:IdiosyncraticGenre2 ;
+    cco:interest <http://dbpedia.org/resource/Category:Blues>, <http://dbpedia.org/resource/Category:Classical_music>, <http://dbpedia.org/resource/Category:Pop_music>, <http://dbpedia.org/resource/Category:Rock_music>, <http://dbpedia.org/resource/The_Beatles>, <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>, <http://dbtune.org/musicbrainz/resource/signal/8aefa373-2858-4643-b691-cad4ac7c971a>, ex:IdiosyncraticGenre1, ex:IdiosyncraticGenre2 ;
     cco:skill <http://dbpedia.org/resource/Piano>, <http://dbpedia.org/resource/Vocal> ;
     a cv:Person, foaf:Person ;
     foaf:birthday "1974-07-09"^^xsd:date ;
@@ -131,7 +131,7 @@ ex:AWorkHistory
 ex:IdiosyncraticGenre1
     ex:tempo "allegro" ;
     dc:title "happy music" ;
-    ao:genre <http://dbpedia.org/page/Category:Pop_music> ;
+    ao:genre <http://dbpedia.org/resource/Category:Pop_music> ;
     ao:mood "happy" ;
     a sim:Association .
 
