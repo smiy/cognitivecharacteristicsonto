@@ -28,7 +28,7 @@
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 cco:  rdf:type owl:Ontology ;
-      dc:creator <http://tobyinkster.co.uk/#i> , <http://semantictweet.com/der42#me> , "Yan Wang"^^xsd:string , <http://foaf.me/zazi#me> , <http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me> , <http://sw.deri.org/~sheila/foaf.rdf#me> , <http://www.johnbreslin.com/foaf/foaf.rdf#me> , <http://danbri.org/foaf.rdf#danbri> , "Danica Damljanovic"^^xsd:string , <http://apassant.net/alex> , "Yi Zeng"^^xsd:string , "Zhisheng Huang"^^xsd:string ;
+      dc:creator <http://tobyinkster.co.uk/#i> , "Yan Wang"^^xsd:string , <http://foaf.me/zazi#me> , <http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me> , <http://sw.deri.org/~sheila/foaf.rdf#me> , <http://www.johnbreslin.com/foaf/foaf.rdf#me> , <http://danbri.org/foaf.rdf#danbri> , "Danica Damljanovic"^^xsd:string , "Yi Zeng"^^xsd:string , "Zhisheng Huang"^^xsd:string ;
       dc:date "2010-09-26T12:16:52+01:00"^^xsd:dateTime ;
       dc:description "A vocabulary for describing cognitive pattern within contexts, their temporal dynamics and their origins"@en ;
       dc:title "Cognitive Characteristics Ontology"@en ;
