@@ -17,10 +17,8 @@
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xml:base="http://purl.org/ontology/cco/core#">
   <owl:Ontology rdf:about="http://purl.org/ontology/cco/core#">
-    <dc:creator rdf:resource="http://apassant.net/alex"/>
     <dc:creator rdf:resource="http://danbri.org/foaf.rdf#danbri"/>
     <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
-    <dc:creator rdf:resource="http://semantictweet.com/der42#me"/>
     <dc:creator rdf:resource="http://sw.deri.org/~sheila/foaf.rdf#me"/>
     <dc:creator rdf:resource="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf#me"/>
     <dc:creator rdf:resource="http://tobyinkster.co.uk/#i"/>
