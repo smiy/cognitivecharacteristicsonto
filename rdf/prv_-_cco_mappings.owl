@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:cco="http://purl.org/ontology/cco/core#"
+   xmlns:ccom="http://purl.org/ontology/cco/mappings#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:prv="http://purl.org/ontology/prv/core#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:status="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://purl.org/ontology/cco/mappings#">
+  <owl:Ontology rdf:about="http://purl.org/ontology/cco/mappings#">
+    <dc:creator rdf:resource="http://foaf.me/zazi#me"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-26T16:59:52+01:00</dc:date>
+    <dc:description xml:lang="en">This ontology includes the property reification descriptions that are related to the Cognitive &#xD;
+Characteristics Ontology and modeled with help of the Property Reification Vocabulary.</dc:description>
+    <dc:title xml:lang="en">Cognitive Characteristics Ontology - Property Reification Mappings</dc:title>
+    <vann:preferredNamespacePrefix>ccom</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://purl.org/ontology/cco/mappings#</vann:preferredNamespaceUri>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/cco/core#"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/ontology/prv/core#"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://purl.org/ontology/prv/core"/>
+    <owl:imports rdf:resource="http://purl.org/vocab/vann/"/>
+    <owl:imports rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+  </owl:Ontology>
+  <prv:PropertyReification rdf:about="http://purl.org/ontology/cco/mappings#BeliefReification">
+    <prv:object_property rdf:resource="http://purl.org/ontology/cco/core#topic"/>
+    <prv:reification_class rdf:resource="http://purl.org/ontology/cco/core#CognitiveCharacteristic"/>
+    <prv:shortcut rdf:resource="http://purl.org/ontology/cco/core#belief"/>
+    <prv:shortcut_property rdf:resource="http://purl.org/ontology/cco/core#characteristic"/>
+    <prv:subject_property rdf:resource="http://purl.org/ontology/cco/core#agent"/>
+    <rdfs:comment xml:lang="en">This is the property reification definition for shortcut relations with the property cco:belief as predicate.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/cco/mappings#"/>
+    <rdfs:label xml:lang="en">Belief Reification</rdfs:label>
+    <status:term_status xml:lang="en">stable</status:term_status>
+  </prv:PropertyReification>
+  <prv:PropertyReification rdf:about="http://purl.org/ontology/cco/mappings#ExpertiseReification">
+    <prv:object_property rdf:resource="http://purl.org/ontology/cco/core#topic"/>
+    <prv:reification_class rdf:resource="http://purl.org/ontology/cco/core#CognitiveCharacteristic"/>
+    <prv:shortcut rdf:resource="http://purl.org/ontology/cco/core#expertise"/>
+    <prv:shortcut_property rdf:resource="http://purl.org/ontology/cco/core#characteristic"/>
+    <prv:subject_property rdf:resource="http://purl.org/ontology/cco/core#agent"/>
+    <rdfs:comment xml:lang="en">This is the property reification definition for shortcut relations with the property cco:expertise as predicate.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/cco/mappings#"/>
+    <rdfs:label xml:lang="en">Expertise Reification</rdfs:label>
+    <status:term_status xml:lang="en">stable</status:term_status>
+  </prv:PropertyReification>
+  <prv:PropertyReification rdf:about="http://purl.org/ontology/cco/mappings#InterestReification">
+    <prv:object_property rdf:resource="http://purl.org/ontology/cco/core#topic"/>
+    <prv:reification_class rdf:resource="http://purl.org/ontology/cco/core#CognitiveCharacteristic"/>
+    <prv:shortcut rdf:resource="http://purl.org/ontology/cco/core#interest"/>
+    <prv:shortcut_property rdf:resource="http://purl.org/ontology/cco/core#characteristic"/>
+    <prv:subject_property rdf:resource="http://purl.org/ontology/cco/core#agent"/>
+    <rdfs:comment xml:lang="en">This is the property reification definition for shortcut relations with the property cco:interest as predicate.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/cco/mappings#"/>
+    <rdfs:label xml:lang="en">Interest Reification</rdfs:label>
+    <status:term_status xml:lang="en">stable</status:term_status>
+  </prv:PropertyReification>
+  <prv:PropertyReification rdf:about="http://purl.org/ontology/cco/mappings#SettingReification">
+    <prv:object_property rdf:resource="http://purl.org/ontology/cco/core#topic"/>
+    <prv:reification_class rdf:resource="http://purl.org/ontology/cco/core#CognitiveCharacteristic"/>
+    <prv:shortcut rdf:resource="http://purl.org/ontology/cco/core#setting"/>
+    <prv:shortcut_property rdf:resource="http://purl.org/ontology/cco/core#characteristic"/>
+    <prv:subject_property rdf:resource="http://purl.org/ontology/cco/core#agent"/>
+    <rdfs:comment xml:lang="en">This is the property reification definition for shortcut relations with the property cco:setting as predicate.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/cco/mappings#"/>
+    <rdfs:label xml:lang="en">Setting Reification</rdfs:label>
+    <status:term_status xml:lang="en">stable</status:term_status>
+  </prv:PropertyReification>
+  <prv:PropertyReification rdf:about="http://purl.org/ontology/cco/mappings#SkillReification">
+    <prv:object_property rdf:resource="http://purl.org/ontology/cco/core#topic"/>
+    <prv:reification_class rdf:resource="http://purl.org/ontology/cco/core#CognitiveCharacteristic"/>
+    <prv:shortcut rdf:resource="http://purl.org/ontology/cco/core#skill"/>
+    <prv:shortcut_property rdf:resource="http://purl.org/ontology/cco/core#characteristic"/>
+    <prv:subject_property rdf:resource="http://purl.org/ontology/cco/core#agent"/>
+    <rdfs:comment xml:lang="en">This is the property reification definition for shortcut relations with the property cco:skill as predicate.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/ontology/cco/mappings#"/>
+    <rdfs:label xml:lang="en">Skill Reification</rdfs:label>
+    <status:term_status xml:lang="en">stable</status:term_status>
+  </prv:PropertyReification>
+</rdf:RDF>

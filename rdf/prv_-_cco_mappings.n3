@@ -1,0 +1,107 @@
+# Saved by TopBraid on Sun Feb 20 20:11:33 CET 2011
+# baseURI: http://purl.org/ontology/cco/mappings#
+# imports: http://purl.org/vocab/vann/
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://www.w3.org/2003/06/sw-vocab-status/ns
+# imports: http://purl.org/ontology/prv/core
+
+@prefix cco:     <http://purl.org/ontology/cco/core#> .
+@prefix ccom:    <http://purl.org/ontology/cco/mappings#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix prv:     <http://purl.org/ontology/prv/core#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix status:  <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+ccom:
+      rdf:type owl:Ontology ;
+      rdfs:seeAlso prv: , cco: ;
+      dc:creator <http://foaf.me/zazi#me> ;
+      dc:date "2010-09-26T16:59:52+01:00"^^xsd:dateTime ;
+      dc:description """This ontology includes the property reification descriptions that are related to the Cognitive 
+Characteristics Ontology and modeled with help of the Property Reification Vocabulary."""@en ;
+      dc:title "Cognitive Characteristics Ontology - Property Reification Mappings"@en ;
+      vann:preferredNamespacePrefix
+              "ccom" ;
+      vann:preferredNamespaceUri
+              "http://purl.org/ontology/cco/mappings#" ;
+      owl:imports dc: , <http://purl.org/ontology/prv/core> , <http://www.w3.org/2003/06/sw-vocab-status/ns> , vann: ;
+      owl:versionInfo 0.1 .
+
+ccom:BeliefReification
+      rdf:type prv:PropertyReification ;
+      rdfs:label "Belief Reification"@en ;
+      rdfs:comment "This is the property reification definition for shortcut relations with the property cco:belief as predicate."@en ;
+      rdfs:isDefinedBy ccom: ;
+      prv:object_property cco:topic ;
+      prv:reification_class
+              cco:CognitiveCharacteristic ;
+      prv:shortcut cco:belief ;
+      prv:shortcut_property
+              cco:characteristic ;
+      prv:subject_property
+              cco:agent ;
+      status:term_status "stable"@en .
+
+ccom:ExpertiseReification
+      rdf:type prv:PropertyReification ;
+      rdfs:label "Expertise Reification"@en ;
+      rdfs:comment "This is the property reification definition for shortcut relations with the property cco:expertise as predicate."@en ;
+      rdfs:isDefinedBy ccom: ;
+      prv:object_property cco:topic ;
+      prv:reification_class
+              cco:CognitiveCharacteristic ;
+      prv:shortcut cco:expertise ;
+      prv:shortcut_property
+              cco:characteristic ;
+      prv:subject_property
+              cco:agent ;
+      status:term_status "stable"@en .
+
+ccom:InterestReification
+      rdf:type prv:PropertyReification ;
+      rdfs:label "Interest Reification"@en ;
+      rdfs:comment "This is the property reification definition for shortcut relations with the property cco:interest as predicate."@en ;
+      rdfs:isDefinedBy ccom: ;
+      prv:object_property cco:topic ;
+      prv:reification_class
+              cco:CognitiveCharacteristic ;
+      prv:shortcut cco:interest ;
+      prv:shortcut_property
+              cco:characteristic ;
+      prv:subject_property
+              cco:agent ;
+      status:term_status "stable"@en .
+
+ccom:SettingReification
+      rdf:type prv:PropertyReification ;
+      rdfs:label "Setting Reification"@en ;
+      rdfs:comment "This is the property reification definition for shortcut relations with the property cco:setting as predicate."@en ;
+      rdfs:isDefinedBy ccom: ;
+      prv:object_property cco:topic ;
+      prv:reification_class
+              cco:CognitiveCharacteristic ;
+      prv:shortcut cco:setting ;
+      prv:shortcut_property
+              cco:characteristic ;
+      prv:subject_property
+              cco:agent ;
+      status:term_status "stable"@en .
+
+ccom:SkillReification
+      rdf:type prv:PropertyReification ;
+      rdfs:label "Skill Reification"@en ;
+      rdfs:comment "This is the property reification definition for shortcut relations with the property cco:skill as predicate."@en ;
+      rdfs:isDefinedBy ccom: ;
+      prv:object_property cco:topic ;
+      prv:reification_class
+              cco:CognitiveCharacteristic ;
+      prv:shortcut cco:skill ;
+      prv:shortcut_property
+              cco:characteristic ;
+      prv:subject_property
+              cco:agent ;
+      status:term_status "stable"@en .
